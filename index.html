@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anish Amit Bedmutha | Advocate B.A.LL.B</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --black:#000;
+    --dark:#111;
+    --brown:#3E2723;
+    --white:#fff;
+    --light:#F8F8F8;
+    --text:#222;
+    --muted:#666;
+    --line:#e4dfd8;
+    --brown-light:#6b4a30;
+    --brown-pale:#c9b8a8;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--text);
+    background:#fff;
+    line-height:1.6;
+}
+
+h1,h2,h3,h4{
+    font-family:'Cinzel',serif;
+    letter-spacing:1px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    background:#000;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    border-bottom:2px solid var(--brown);
+}
+
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-logo{
+    width:75px;
+    height:55px;
+    object-fit:contain;
+}
+
+
+/* THREE LINE MENU */
+
+.menu-button{
+    width:52px;
+    height:52px;
+    background:none;
+    border:none;
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    gap:7px;
+
+    padding:8px;
+}
+
+.menu-button span{
+    display:block;
+    height:3px;
+    background:#fff;
+    border-radius:2px;
+}
+
+.menu-button span:nth-child(1){
+    width:30px;
+}
+
+.menu-button span:nth-child(2){
+    width:44px;
+}
+
+.menu-button span:nth-child(3){
+    width:30px;
+}
+
+
+/* MENU */
+
+.menu{
+    position:absolute;
+    right:20px;
+    top:70px;
+    width:220px;
+
+    background:#000;
+    border:1px solid var(--brown);
+
+    display:none;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.menu.active{
+    display:block;
+}
+
+.menu a{
+    display:block;
+    padding:15px 20px;
+
+    color:#fff;
+
+    font-size:.9rem;
+
+    border-bottom:1px solid #222;
+
+    transition:.2s;
+}
+
+.menu a:hover{
+    background:var(--brown);
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    margin-top:75px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:80px 20px 70px;
+
+    color:#fff;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.88),
+        rgba(17,17,17,.95)
+    ),
+    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2000&q=80")
+    center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.advocate-logo{
+    width:165px;
+    height:165px;
+    object-fit:contain;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:2.7rem;
+    margin-bottom:12px;
+}
+
+.qualification{
+    font-size:1.15rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:0 auto 35px;
+
+    font-size:1.05rem;
+    opacity:.8;
+    font-weight:300;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:14px 32px;
+
+    background:var(--brown);
+    border:1px solid var(--brown);
+
+    color:#fff;
+
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:transparent;
+    border-color:#fff;
+}
+
+
+/* ================= STATS ================= */
+
+.stats-section{
+    background:#111;
+    color:#fff;
+
+    padding:65px 20px;
+
+    border-bottom:4px solid var(--brown);
+}
+
+.stats-grid{
+    max-width:900px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:50px;
+
+    text-align:center;
+}
+
+.number{
+    font-family:'Cinzel',serif;
+    font-size:3.6rem;
+    font-weight:700;
+}
+
+.label{
+    font-size:.85rem;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    opacity:.65;
+}
+
+
+/* ================= SECTIONS ================= */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.section-title{
+    text-align:center;
+
+    font-size:2.2rem;
+
+    color:#000;
+
+    margin-bottom:55px;
+
+    text-transform:uppercase;
+}
+
+.section-title::after{
+    content:"";
+
+    display:block;
+
+    width:55px;
+    height:3px;
+
+    background:var(--brown);
+
+    margin:14px auto 0;
+}
+
+
+/* ================= PRACTICE ================= */
+
+.practice-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.practice-card{
+    background:var(--light);
+
+    padding:35px 30px;
+
+    border-left:4px solid #000;
+
+    transition:.3s;
+}
+
+.practice-card:hover{
+    border-left-color:var(--brown);
+
+    background:#fff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.07);
+
+    transform:translateY(-3px);
+}
+
+.practice-card h3{
+    font-size:1.2rem;
+    margin-bottom:12px;
+}
+
+.practice-card p{
+    font-size:.92rem;
+    color:var(--muted);
+}
+
+
+/* ================= PARTNERS ================= */
+
+.partners-bg{
+    background:#F8F8F8;
+}
+
+.partners-grid{
+    max-width:1000px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+}
+
+.partner-card{
+    background:#fff;
+
+    padding:35px 30px 40px;
+
+    text-align:center;
+
+    border-top:3px solid var(--brown);
+}
+
+.partner-photo{
+    width:180px;
+    height:220px;
+
+    object-fit:cover;
+    object-position:top center;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    border:1px solid #ddd;
+}
+
+.partner-card h3{
+    font-size:1.3rem;
+    margin-bottom:8px;
+}
+
+.partner-degree{
+    color:var(--brown);
+    font-weight:600;
+}
+
+
+/* ================= INSIGHTS ================= */
+
+.insights-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.insight-card{
+    padding:30px;
+
+    background:var(--light);
+
+    border-top:3px solid var(--brown);
+}
+
+.insight-card h3{
+    font-size:1.15rem;
+    margin-bottom:12px;
+}
+
+.insight-card p{
+    color:var(--muted);
+    font-size:.9rem;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-layout{
+    display:flex;
+
+    gap:50px;
+
+    align-items:flex-start;
+}
+
+.contact-meta{
+    flex:1;
+}
+
+.meta-box{
+    margin-bottom:25px;
+}
+
+.meta-box h4{
+    font-size:1rem;
+
+    text-transform:uppercase;
+
+    margin-bottom:6px;
+
+    color:var(--brown);
+}
+
+.meta-box p{
+    font-size:1rem;
+}
+
+.meta-box a:hover{
+    color:var(--brown);
+}
+
+.contact-actions{
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+}
+
+.contact-button{
+    display:inline-block;
+
+    padding:12px 20px;
+
+    background:#000;
+
+    color:#fff;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    border:1px solid #000;
+
+    cursor:pointer;
+}
+
+.contact-button:hover{
+    background:var(--brown);
+    border-color:var(--brown);
+}
+
+
+/* ================= FORM ================= */
+
+.contact-form-panel{
+    flex:1.5;
+
+    background:var(--light);
+
+    padding:40px;
+}
+
+.input-row{
+    margin-bottom:20px;
+}
+
+.input-row label{
+    display:block;
+
+    font-size:.85rem;
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+    margin-bottom:6px;
+}
+
+.input-row input,
+.input-row textarea{
+    width:100%;
+
+    padding:13px;
+
+    border:1px solid #ddd;
+
+    background:#fff;
+
+    font-family:inherit;
+
+    font-size:.95rem;
+}
+
+.input-row textarea{
+    min-height:140px;
+
+    resize:vertical;
+}
+
+.input-row input:focus,
+.input-row textarea:focus{
+    outline:1px solid var(--brown);
+}
+
+.form-action-btn{
+    width:100%;
+
+    padding:14px 28px;
+
+    background:#000;
+
+    color:#fff;
+
+    border:none;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+}
+
+.form-action-btn:hover{
+    background:var(--brown);
+}
+
+
+/* ================= WHATSAPP BUTTON ================= */
+
+.whatsapp-btn{
+    margin-top:20px;
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    background:transparent;
+
+    border:1px solid var(--brown-pale);
+
+    color:#000;
+
+    padding:14px 28px;
+
+    cursor:pointer;
+
+    font-family:'Cinzel',serif;
+
+    font-size:13px;
+
+    letter-spacing:.1em;
+
+    text-transform:uppercase;
+
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+    background:var(--brown);
+    color:#fff;
+}
+
+
+/* ================= WHATSAPP MODAL ================= */
+
+.wa-modal-overlay{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(10,10,10,.7);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:all .3s ease;
+
+    z-index:2000;
+
+    padding:20px;
+}
+
+.wa-modal-overlay.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.wa-modal{
+    background:#fff;
+
+    max-width:360px;
+
+    width:100%;
+
+    padding:36px 30px;
+
+    position:relative;
+
+    transform:scale(.92);
+
+    transition:transform .3s ease;
+}
+
+.wa-modal-overlay.show .wa-modal{
+    transform:scale(1);
+}
+
+.wa-close{
+    position:absolute;
+
+    top:14px;
+    right:16px;
+
+    background:none;
+
+    border:none;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    color:#000;
+}
+
+.wa-modal h3{
+    font-size:19px;
+
+    margin-bottom:22px;
+
+    color:#000;
+}
+
+.wa-option{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:16px 18px;
+
+    border:1px solid var(--line);
+
+    margin-bottom:12px;
+
+    transition:.25s;
+}
+
+.wa-option:hover{
+    border-color:var(--brown);
+
+    background:var(--light);
+}
+
+.wa-option span{
+    font-weight:500;
+
+    font-size:15px;
+}
+
+.wa-option .arrow{
+    color:var(--brown-light);
+
+    font-size:18px;
+}
+
+
+/* ================= FORM NOTE ================= */
+
+.form-note{
+    margin-top:16px;
+
+    font-size:13px;
+
+    color:var(--brown);
+
+    display:none;
+}
+
+.form-note.show{
+    display:block;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#000;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:50px 20px 30px;
+}
+
+.bar-disclaimer{
+    max-width:850px;
+
+    margin:auto auto 30px;
+
+    font-size:.78rem;
+
+    line-height:1.6;
+
+    opacity:.55;
+
+    padding-bottom:25px;
+
+    border-bottom:1px solid #222;
+}
+
+.footer-cr{
+    font-size:.85rem;
+
+    opacity:.7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .practice-grid{
+        grid-template-columns:1fr;
+    }
+
+    .insights-grid{
+        grid-template-columns:1fr;
+    }
+
+    .partners-grid{
+        grid-template-columns:1fr;
+
+        max-width:600px;
+    }
+
+    .contact-layout{
+        flex-direction:column;
+    }
+
+    .contact-form-panel{
+        width:100%;
+    }
+}
+
+@media(max-width:768px){
+
+    .nav-container{
+        padding:8px 15px;
+    }
+
+    .header-logo{
+        width:65px;
+        height:50px;
+    }
+
+    .hero{
+        min-height:90vh;
+
+        margin-top:65px;
+
+        padding-top:70px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .advocate-logo{
+        width:135px;
+        height:135px;
+    }
+
+    .qualification{
+        font-size:.9rem;
+        letter-spacing:2px;
+    }
+
+    .hero p{
+        font-size:.95rem;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+        gap:30px 10px;
+    }
+
+    .number{
+        font-size:2.5rem;
+    }
+
+    .label{
+        font-size:.7rem;
+        letter-spacing:1px;
+    }
+}
+
+@media(max-width:480px){
+
+    .header-logo{
+        width:60px;
+        height:45px;
+    }
+
+    .menu{
+        right:12px;
+        top:60px;
+    }
+
+    .hero{
+        margin-top:60px;
+    }
+
+    .hero h1{
+        font-size:1.65rem;
+    }
+
+    .advocate-logo{
+        width:115px;
+        height:115px;
+    }
+
+    .qualification{
+        font-size:.78rem;
+    }
+
+    .hero p{
+        font-size:.9rem;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .number{
+        font-size:2.8rem;
+    }
+
+    .contact-form-panel{
+        padding:25px 18px;
+    }
+
+    .partner-photo{
+        width:160px;
+        height:200px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="nav-container">
+
+<img
+src="ab-logo.png"
+alt="AB Logo"
+class="header-logo"
+>
+
+<button
+class="menu-button"
+id="menuButton"
+type="button"
+aria-label="Open navigation menu"
+>
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<div class="menu" id="mobileMenu">
+
+<a href="#home">Home</a>
+
+<a href="#practice">Practice Areas</a>
+
+<a href="#partners">Partners</a>
+
+<a href="#insights">Insights</a>
+
+<a href="#contact">Contact Us</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<div class="hero" id="home">
+
+<div class="hero-content">
+
+<img
+src="advocate-logo.png"
+alt="Advocate Logo"
+class="advocate-logo"
+>
+
+<div class="qualification">
+ADVOCATE — B.A.LL.B
+</div>
+
+<p>
+Providing professional legal assistance,
+representation and strategic counsel with
+a practical and transparent approach.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ================= STATS ================= -->
+
+<div class="stats-section">
+
+<div class="stats-grid">
+
+<div>
+
+<div
+class="number"
+data-target="125"
+>
+0
+</div>
+
+<div class="label">
+Total Cases Handled
+</div>
+
+</div>
+
+
+<div>
+
+<div
+class="number"
+data-target="70"
+>
+0
+</div>
+
+<div class="label">
+Litigation Matters
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= PRACTICE AREAS ================= -->
+
+<section id="practice">
+
+<h2 class="section-title">
+Practice Areas
+</h2>
+
+<div class="practice-grid">
+
+<div class="practice-card">
+
+<h3>Civil Practice</h3>
+
+<p>
+Strategic legal assistance and representation
+in civil disputes, property matters, recovery
+proceedings and contractual issues.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Criminal</h3>
+
+<p>
+Legal representation and assistance in criminal
+proceedings, defence matters and related
+legal issues.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Dispute Resolution</h3>
+
+<p>
+Assistance in resolving disputes through
+negotiation, proceedings and appropriate
+dispute resolution mechanisms.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Intellectual Property</h3>
+
+<p>
+Legal assistance concerning intellectual property
+rights, protection, disputes and related
+commercial matters.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Mergers &amp; Acquisitions</h3>
+
+<p>
+Legal counsel relating to transactions,
+documentation, due diligence and regulatory
+considerations in corporate matters.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Regulatory Matters</h3>
+
+<p>
+Strategic legal assistance concerning
+regulatory, compliance and administrative
+matters before relevant authorities.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Technology &amp; Media</h3>
+
+<p>
+Legal counsel relating to technology, digital
+businesses, media matters, agreements and
+emerging regulatory issues.
+</p>
+
+</div>
+
+
+<div class="practice-card">
+
+<h3>Legal Consultation</h3>
+
+<p>
+Confidential legal consultation focused on
+practical strategy, risk assessment and
+informed decision-making.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PARTNERS ================= -->
+
+<div class="partners-bg">
+
+<section id="partners">
+
+<h2 class="section-title">
+Partners
+</h2>
+
+<div class="partners-grid">
+
+
+<div class="partner-card">
+
+<img
+src="anish.jpg"
+alt="Anish Amit Bedmutha"
+class="partner-photo"
+>
+
+<h3>
+Anish Amit Bedmutha
+</h3>
+
+<div class="partner-degree">
+B.A.LL.B
+</div>
+
+</div>
+
+
+<div class="partner-card">
+
+<img
+src="sudhanshu.jpg"
+alt="Sudhanshu R. Bade"
+class="partner-photo"
+>
+
+<h3>
+Sudhanshu R. Bade
+</h3>
+
+<div class="partner-degree">
+LLM, B.A.LL.B
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- ================= INSIGHTS ================= -->
+
+<section id="insights">
+
+<h2 class="section-title">
+Insights
+</h2>
+
+<div class="insights-grid">
+
+
+<div class="insight-card">
+
+<h3>
+Legal Developments
+</h3>
+
+<p>
+Perspectives on important legal developments,
+regulatory changes and matters relevant to
+individuals and businesses.
+</p>
+
+</div>
+
+
+<div class="insight-card">
+
+<h3>
+Legal Perspectives
+</h3>
+
+<p>
+Practical perspectives on litigation,
+dispute resolution and emerging areas
+of legal practice.
+</p>
+
+</div>
+
+
+<div class="insight-card">
+
+<h3>
+Legal Updates
+</h3>
+
+<p>
+Selected legal updates and observations
+intended to provide general introductory
+information.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="contact-layout">
+
+
+<div class="contact-meta">
+
+
+<div class="meta-box">
+
+<h4>
+Advocate
+</h4>
+
+<p>
+Anish Amit Bedmutha
+</p>
+
+</div>
+
+
+<div class="meta-box">
+
+<h4>
+Qualification
+</h4>
+
+<p>
+B.A.LL.B
+</p>
+
+</div>
+
+
+<div class="meta-box">
+
+<h4>
+Mobile Number
+</h4>
+
+<p>
+<a href="tel:+918149551392">
+8149551392
+</a>
+</p>
+
+</div>
+
+
+<div class="meta-box">
+
+<h4>
+Email
+</h4>
+
+<p>
+<a href="mailto:advocateanish08@gmail.com">
+advocateanish08@gmail.com
+</a>
+</p>
+
+</div>
+
+
+<div class="meta-box">
+
+<h4>
+Office Address
+</h4>
+
+<p>
+Office No. 7, Jadhav Complex,<br>
+Vadgaon Maval, Dist. Pune-412106
+</p>
+
+</div>
+
+
+<div class="meta-box">
+
+<h4>
+Additional Office
+</h4>
+
+<p>
+Bedmutha Office, Bazarpeth,<br>
+Kamshet, Tal. Maval,<br>
+Dist. Pune-410405
+</p>
+
+</div>
+
+
+<div class="meta-box">
+
+<h4>
+Sudhanshu R. Bade
+</h4>
+
+<p>
+LLM, B.A.LL.B<br>
+<a href="tel:+917498432837">7498432837</a><br>
+<a href="mailto:sudhanshubade@gmail.com">sudhanshubade@gmail.com</a>
+</p>
+
+</div>
+
+
+<div class="contact-actions">
+
+<button
+type="button"
+class="whatsapp-btn"
+id="waBtn"
+>
+Chat on WhatsApp
+</button>
+
+</div>
+
+</div>
+
+
+<!-- ================= ENQUIRY FORM ================= -->
+
+<div class="contact-form-panel">
+
+<form
+action="https://formsubmit.co/advocateanish08@gmail.com"
+method="POST"
+id="enquiryForm"
+>
+
+<input
+type="hidden"
+name="_subject"
+value="New Website Inquiry - Anish Amit Bedmutha"
+>
+
+<input
+type="hidden"
+name="_cc"
+value="sudhanshubade@gmail.com"
+>
+
+<input
+type="hidden"
+name="_captcha"
+value="false"
+>
+
+<input
+type="hidden"
+name="_template"
+value="table"
+>
+
+
+<div class="input-row">
+
+<label for="name">
+Full Name
+</label>
+
+<input
+type="text"
+id="name"
+name="Full Name"
+required
+placeholder="Your name"
+>
+
+</div>
+
+
+<div class="input-row">
+
+<label for="email">
+Email
+</label>
+
+<input
+type="email"
+id="email"
+name="Email"
+required
+placeholder="you@example.com"
+>
+
+</div>
+
+
+<div class="input-row">
+
+<label for="phone">
+Contact Number
+</label>
+
+<input
+type="tel"
+id="phone"
+name="Contact Number"
+required
+placeholder="Your phone number"
+>
+
+</div>
+
+
+<div class="input-row">
+
+<label for="message">
+Case Details
+</label>
+
+<textarea
+id="message"
+name="Case Details"
+required
+placeholder="Briefly describe your matter"
+></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="form-action-btn"
+>
+Submit Inquiry
+</button>
+
+
+<div
+class="form-note"
+id="formNote"
+>
+Thank you. Your inquiry has been sent — we will contact you shortly.
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHATSAPP MODAL ================= -->
+
+<div
+class="wa-modal-overlay"
+id="waModalOverlay"
+>
+
+<div class="wa-modal">
+
+<button
+class="wa-close"
+id="waClose"
+type="button"
+>
+&times;
+</button>
+
+<h3>
+Chat on WhatsApp
+</h3>
+
+
+<a
+class="wa-option"
+href="https://api.whatsapp.com/send?phone=918149551392&text=Hello%20Anish%2C%20I%20would%20like%20to%20discuss%20a%20legal%20matter."
+target="_blank"
+rel="noopener"
+>
+
+<span>
+Chat with Anish
+</span>
+
+<span class="arrow">
+→
+</span>
+
+</a>
+
+
+<a
+class="wa-option"
+href="https://api.whatsapp.com/send?phone=917498432837&text=Hello%20Sudhanshu%2C%20I%20would%20like%20to%20discuss%20a%20legal%20matter."
+target="_blank"
+rel="noopener"
+>
+
+<span>
+Chat with Sudhanshu
+</span>
+
+<span class="arrow">
+→
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="bar-disclaimer">
+
+In strict compliance with the rules of the Bar 
+Council of India, an advocate is prohibited
+from advertising or soliciting work through
+digital directories or public spaces.
+The information provided across this platform
+is explicitly for introductory and informational
+purposes only and does not constitute legal
+advice, solicitation, or advertisement in any form.
+
+</div>
+
+<p class="footer-cr">
+© 2026 Advocate Anish Amit Bedmutha. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<script>
+
+// ===== Hamburger menu toggle =====
+
+const menuButton = document.getElementById('menuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (menuButton && mobileMenu) {
+
+    menuButton.addEventListener('click', function(e){
+
+        e.stopPropagation();
+
+        mobileMenu.classList.toggle('active');
+
+    });
+
+
+    document.addEventListener('click', function(e){
+
+        if(
+            !mobileMenu.contains(e.target) &&
+            !menuButton.contains(e.target)
+        ){
+
+            mobileMenu.classList.remove('active');
+
+        }
+
+    });
+
+
+    mobileMenu.querySelectorAll('a').forEach(function(a){
+
+        a.addEventListener(
+            'click',
+            function(){
+
+                mobileMenu.classList.remove('active');
+
+            }
+        );
+
+    });
+
+}
+
+
+// ===== Animated stat counters =====
+
+const counters =
+    document.querySelectorAll('.number');
+
+let counted = false;
+
+
+function animateCounters(){
+
+    if(counted) return;
+
+    counted = true;
+
+
+    counters.forEach(function(el){
+
+        const target =
+            parseInt(
+                el.getAttribute('data-target'),
+                10
+            );
+
+        let current = 0;
+
+        const steps = 90;
+
+        const increment =
+            target / steps;
+
+
+        const timer =
+            setInterval(function(){
+
+                current += increment;
+
+
+                if(current >= target){
+
+                    el.textContent =
+                        target + '+';
+
+                    clearInterval(timer);
+
+                }else{
+
+                    el.textContent =
+                        Math.floor(current);
+
+                }
+
+            },16);
+
+    });
+
+}
+
+
+const statsSection =
+    document.querySelector('.stats-section');
+
+
+if(statsSection){
+
+    const observer =
+        new IntersectionObserver(
+            function(entries){
+
+                entries.forEach(function(entry){
+
+                    if(entry.isIntersecting){
+
+                        animateCounters();
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold:0.4
+            }
+        );
+
+
+    observer.observe(statsSection);
+
+}
+
+
+// ===== WhatsApp modal =====
+
+const waBtn =
+    document.getElementById('waBtn');
+
+const waModalOverlay =
+    document.getElementById('waModalOverlay');
+
+const waClose =
+    document.getElementById('waClose');
+
+
+function openWaModal(){
+
+    if(waModalOverlay){
+
+        waModalOverlay.classList.add('show');
+
+    }
+
+}
+
+
+function closeWaModal(){
+
+    if(waModalOverlay){
+
+        waModalOverlay.classList.remove('show');
+
+    }
+
+}
+
+
+if(waBtn){
+
+    waBtn.addEventListener(
+        'click',
+        openWaModal
+    );
+
+}
+
+
+if(waClose){
+
+    waClose.addEventListener(
+        'click',
+        closeWaModal
+    );
+
+}
+
+
+if(waModalOverlay){
+
+    waModalOverlay.addEventListener(
+        'click',
+        function(e){
+
+            if(e.target === waModalOverlay){
+
+                closeWaModal();
+
+            }
+
+        }
+    );
+
+}
+
+
+document.addEventListener(
+    'keydown',
+    function(e){
+
+        if(e.key === 'Escape'){
+
+            closeWaModal();
+
+            if(mobileMenu){
+
+                mobileMenu.classList.remove(
+                    'active'
+                );
+
+            }
+
+        }
+
+    }
+);
+
+
+// ===== Enquiry form =====
+
+const enquiryForm =
+    document.getElementById('enquiryForm');
+
+const formNote =
+    document.getElementById('formNote');
+
+
+if(enquiryForm){
+
+    enquiryForm.addEventListener(
+        'submit',
+        function(e){
+
+            e.preventDefault();
+
+
+            const formData =
+                new FormData(enquiryForm);
+
+
+            fetch(
+                enquiryForm.action,
+                {
+                    method:'POST',
+                    body:formData,
+                    headers:{
+                        'Accept':'application/json'
+                    }
+                }
+            )
+
+            .then(function(response){
+
+                if(response.ok){
+
+                    if(formNote){
+
+                        formNote.textContent =
+                            'Thank you. Your inquiry has been sent — we will contact you shortly.';
+
+                        formNote.classList.add(
+                            'show'
+                        );
+
+                    }
+
+                    enquiryForm.reset();
+
+                }else{
+
+                    if(formNote){
+
+                        formNote.textContent =
+                            'Something went wrong. Please try again or contact us directly.';
+
+                        formNote.classList.add(
+                            'show'
+                        );
+
+                    }
+
+                }
+
+            })
+
+            .catch(function(){
+
+                if(formNote){
+
+                    formNote.textContent =
+                        'Something went wrong. Please try again or contact us directly.';
+
+                    formNote.classList.add(
+                        'show'
+                    );
+
+                }
+
+            });
+
+        }
+    );
+
+}
+
+</script>
+
+</body>
+</html>
